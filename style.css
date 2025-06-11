@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #6d8dbc;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #001eff;
+  border-radius: 4px;
+}
+
+.gender {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox {
+  grid-column: span 2;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #013770;
+}
+
+#message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
